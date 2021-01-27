@@ -1,5 +1,7 @@
 package com.iu.s3;
 
+import java.util.Scanner;
+
 public class Condition_1_ex2 {
 	
 	//main 생성
@@ -10,6 +12,51 @@ public class Condition_1_ex2 {
 	//평균이 70점 이상이면 C 출력
 	//평균이 60점 이상이면 D 출력
 	//평균이 60점 미만이면 F 출력
+	
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		int kor=0;
+		int eng=0;
+		int math=0;
+		int total=0;
+		double avr=0;
+		String point="F";//null
+		
+		System.out.println("국어 점수 입력");
+		kor = sc.nextInt();
+		
+		System.out.println("영어 점수 입력");
+		eng = sc.nextInt();
+		
+		System.out.println("수학 점수 입력");
+		math = sc.nextInt();
+		
+		total = kor + eng + math;
+		avr = total/3.0;
+		
+		if(avr>=90) {
+			point="A";
+		}
+		
+		if(avr>=80 && avr<90) {
+			point="B";
+		}
+		
+		if(avr>=70 && avr<80) {
+			point="C";
+		}
+		
+		if(avr>=60 && avr<70) {
+			point="D";
+		}
+		
+//		if(avr<60) {
+//			point="F";
+//		}
+		
+		System.out.println(point);
+		System.out.println("프로그램 종료");
+	}
 	
 	
 
