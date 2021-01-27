@@ -38,6 +38,8 @@ public class Condition_1_ex1 {
 			System.out.println("우수 학생");
 		}
 		
+		
+		
 		System.out.println("졸업");
 	}
 	
